@@ -1,0 +1,30 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .title {
+  color: rgb(129, 126, 126);
+  font-size: 60px;
+}
+.main .searchBox {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .searchBox .fieldInput {
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+.table {
+  height: 70vh;
+  width: 80vw;
+}/*# sourceMappingURL=style.css.map */

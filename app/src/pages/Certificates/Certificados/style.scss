@@ -1,0 +1,53 @@
+.upload {
+	width: 100vw;
+	margin-top: 50px;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+
+	.uploadBox {
+
+		// background-color: #f8f8f8;
+
+
+		.dropZone {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+			.drop {
+				height: 50px;
+				width: 300px;
+
+				padding: 10px;
+
+				border-width: 1px;
+				border-style: dashed;
+
+				text-align: center;
+				margin-bottom: 10px;
+			}
+
+			.dropOn {
+				background-color: greenyellow;
+				border-color: hotpink;
+			}
+
+			.dropOff {
+				background-color: lightcyan;
+				border-color: black;
+			}
+		}
+
+		.selectBox {
+			width: 200px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

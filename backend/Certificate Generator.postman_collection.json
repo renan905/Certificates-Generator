@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "9605f365-99f7-43fc-b6f3-dfdfb4833ab7",
+		"name": "Certificate Generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Template",
+			"item": [
+				{
+					"name": "Upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/E:/Git/Certificates-Generator/backend/src/demo/demo.docx"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/templates/upload/?userId=1&templateName=demo renan",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"templates",
+								"upload",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1",
+									"description": "Admin userID"
+								},
+								{
+									"key": "templateName",
+									"value": "demo renan",
+									"description": "Nome do template"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Certificate",
+			"item": [
+				{
+					"name": "Upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"description": "Arquivo csv com dados",
+									"type": "file",
+									"src": "/E:/Git/Certificates-Generator/backend/src/demo/demo.csv"
+								},
+								{
+									"key": "title",
+									"value": "demo renan",
+									"description": "Nome do certificado",
+									"type": "default"
+								},
+								{
+									"key": "issuedBy",
+									"value": "1",
+									"description": "ID do admin emissor do certificado",
+									"type": "default"
+								},
+								{
+									"key": "templateId",
+									"value": "5",
+									"description": "ID do template do certificado",
+									"type": "default"
+								},
+								{
+									"key": "emailMessage",
+									"value": "Seu certificado esta pronto",
+									"description": "Mensagem do corpo do email",
+									"type": "default"
+								},
+								{
+									"key": "emailTitle",
+									"value": "Certificado",
+									"description": "Titulo/Assunto do email",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/certificates/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"certificates",
+								"upload"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

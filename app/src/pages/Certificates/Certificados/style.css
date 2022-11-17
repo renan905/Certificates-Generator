@@ -1,0 +1,37 @@
+.upload {
+  width: 100vw;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload .uploadBox .dropZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.upload .uploadBox .dropZone .drop {
+  height: 50px;
+  width: 300px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: dashed;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.upload .uploadBox .dropZone .dropOn {
+  background-color: greenyellow;
+  border-color: hotpink;
+}
+.upload .uploadBox .dropZone .dropOff {
+  background-color: lightcyan;
+  border-color: black;
+}
+.upload .uploadBox .selectBox {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */

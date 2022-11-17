@@ -1,0 +1,16 @@
+.navbar {
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+
+
+
+	.link {
+		text-decoration: none;
+
+		margin-left: 15px;
+	}
+}

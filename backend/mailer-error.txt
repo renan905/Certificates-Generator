@@ -1,0 +1,1 @@
+[Errno 2] No such file or directory: '/mnt/e/Git/Certificates-Generator/backend/src/database/raw/certificates/4f3f27f1-ff4d-4394-bf0d-2b20cc152495.pdf'
